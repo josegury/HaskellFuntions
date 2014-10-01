@@ -1,0 +1,8 @@
+binario :: ArbolG a -> Bool
+bnario AVG = False
+binario (AG r s) = (length s <= 2) && auxbinario s
+
+auxbinario :: [ArbolG a] -> Bool
+auxbinario [] = True
+auxbinario (h : p) = (binario h) && (auxbinario p)
+
